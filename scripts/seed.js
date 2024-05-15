@@ -5,10 +5,14 @@ const {
   revenue,
   users,
 } = require('../app/lib/placeholder-data.js');
+
+// The script uses bcrypt to hash the user's password,
 const bcrypt = require('bcrypt');
 
 async function seedUsers(client) {
   try {
+
+    // sql function - This function translates your query into a native Postgres parameterized query to help prevent SQL injections
     await client.sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;
     // Create the "users" table if it doesn't exist
     const createTable = await client.sql`

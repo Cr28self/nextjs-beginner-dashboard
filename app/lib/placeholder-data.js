@@ -64,12 +64,6 @@ const customers = [
     email: 'amy@burns.com',
     image_url: '/customers/amy-burns.png',
   },
-  {
-    id: '13D07535-C59E-4157-A011-F8D2EF4E0CBB',
-    name: 'Balazs Orban',
-    email: 'balazs@orban.com',
-    image_url: '/customers/balazs-orban.png',
-  },
 ];
 
 const invoices = [
